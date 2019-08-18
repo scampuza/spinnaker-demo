@@ -3,7 +3,7 @@ pipeline {
     environment {
         BUCKET = credentials('jenkins-aws-s3-spinnaker-demo-bucket')
         ACCESS_KEY_ID = credentials('jenkins-aws-s3-spinnaker-demo-access-key-id')
-        //SECRET_ACCESS_KEY = credentials('jenkins-aws-s3-spinnaker-demo-secret-access-key')
+        SECRET_ACCESS_KEY = credentials('jenkins-aws-s3-spinnaker-demo-secret-access-key')
     }
     stages {
         stage('Preliminary Tests') {
