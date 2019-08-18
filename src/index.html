@@ -15,7 +15,7 @@
 
         <h2>spinnaker-demo</h2>
         <p>This project is an end-to-end sample for triggering Jenkins jobs from GitHub (with unique per-branch options) and triggering a Spinnaker deploy pipeline with successful Jenkins jobs for particular branches.<p>
-        <p>Flow and key considerations:
+        <p>Flow and key considerations: Santiago
         <ul>
           <li>Test and Build/Package scripts are included. The package is a debian package that expects to install an available debian-compatible server image (it installs and configures its own dependencies - nginx in this case)</li>
           <li>Test and build/package scripts are executed via jenkins-pipeline using Jenkinsfile in the repo root. Logic for skipping apt repo deploy for non-master branches is located in Jenkinsfile.</li>
