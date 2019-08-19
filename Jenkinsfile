@@ -1,7 +1,8 @@
 pipeline {
     agent any
     environment {
-        BUCKET = credentials('jenkins-aws-s3-spinnaker-demo-bucket')
+        //BUCKET = credentials('jenkins-aws-s3-spinnaker-demo-bucket')
+        BUCKET = 'spinnaker-demo.santiago.works'
         ACCESS_KEY_ID = credentials('jenkins-aws-s3-spinnaker-demo-access-key-id')
         SECRET_ACCESS_KEY = credentials('jenkins-aws-s3-spinnaker-demo-secret-access-key')
     }
